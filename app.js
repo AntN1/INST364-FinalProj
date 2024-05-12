@@ -1,29 +1,26 @@
 const questions = [
     {
-        question: "question 1 here",
-        answers: ["a", "b", "c", "d"],
-        correctAnswer: "a"
+        question: "Select the most secure password",
+        answers: ["Water123", "OpeOpeFruit435!", "d3%d`.E/AerZ09(", "DOB02/14/98"],
+        correctAnswer: "d3%d`.E/AerZ09("
     },
     {
-        question: "question 2 here",
-        answers: ["a", "b", "c", "d"],
-        correctAnswer: "b"
+        question: "Which best describes password entropy",
+        answers: ["Password entropy is a measure of how predictable your password is.", 
+        "Password entropy is solely determine by the length of your password.", 
+        "Password entropy is measured of when you should change your password.", "Password entropy is a measure of how easy a password is to remember."],
+        correctAnswer: "Password entropy is a measure of how predictable your password is."
     },
     {
-        question: "question 3 here",
-        answers: ["a", "b", "c", "d"],
-        correctAnswer: "c"
+        question: "What are the 3 kinds of password managers",
+        answers: ["Online, offline, free", "Browser-based, cloud-based, desktop-based", "free, premium, ultimate", "key-based, token-based, trust-based"],
+        correctAnswer: "Browser-based, cloud-based, desktop-based"
     },
     {
-        question: "question 4 here",
-        answers: ["a", "b", "c", "d"],
-        correctAnswer: "a"
+        question: "Entropy is measured in...",
+        answers: ["frames", "joules", "watts", "bits"],
+        correctAnswer: "bits"
     },
-    {
-        question: "question 5 here",
-        answers: ["a", "b", "c", "d"],
-        correctAnswer: "d"
-    }
 ]
 
 let currentIndex = 0;
@@ -60,6 +57,7 @@ function handleAnswerClick(event) {
 
     const nextButton = document.getElementById("next");
     nextButton.style.display = "block"; 
+    nextButton.style.margin = "auto"
 }
 
 function handleNextClick() {
@@ -69,6 +67,9 @@ function handleNextClick() {
     } else {
         displayScore();
     }
+
+    const nextButton = document.getElementById("next")
+    nextButton.style.display = "none"
 }
 
 function displayScore() {
@@ -82,12 +83,6 @@ function displayScore() {
     quizContainer.innerHTML = ""; 
     quizContainer.appendChild(scoreElement);
     quizContainer.appendChild(refreshMessage);
-}
-
-function resetQuiz() {
-    currentIndex = 0;
-    score = 0;
-    displayQuestion();
 }
 
 const answerButtons = document.querySelectorAll(".btn");

@@ -22,17 +22,17 @@ body{
 
 #main-nav ul li a{
     color: wheat;
-}
-
-a{
     font-size: 20px;
-    color: white;
     text-decoration: none;
 }
 
-#sources{
-    font-size: 16px;
-    color: rgb(3, 3, 235);
+.sourcesLi{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sources{
+    color: rgb(110, 110, 242);
     text-decoration: underline;
 }
 
@@ -58,6 +58,18 @@ h2{
 }
 
 #lockgif{
+    width: 500px;
+}
+
+#chrome{
+    width: 500px;
+}
+
+#keepassxc{
+    width: 600px;
+}
+
+#onepassword{
     width: 500px;
 }
 
@@ -122,6 +134,7 @@ h2{
     border-radius: 5px;
     border: none;
     background-color: tan;
+    display: none;
 }
 
 #next:hover{
