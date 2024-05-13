@@ -1,18 +1,23 @@
 const questions = [
     {
-        question: "Select the most secure password",
+        question: "Select the most secure password:",
         answers: ["Water123", "OpeOpeFruit435!", "d3%d`.E/AerZ09(", "DOB02/14/98"],
         correctAnswer: "d3%d`.E/AerZ09("
     },
     {
-        question: "Which best describes password entropy",
+        question: "What are the tradeoffs when evaluating a password?",
+        answers:["entropy vs strength","length vs character variety","common vs uncommon","easy to remember vs secure"],
+        correctAnswer: "easy to remember vs secure"
+    },
+    {
+        question: "Which best describes password entropy?",
         answers: ["Password entropy is a measure of how predictable your password is.", 
         "Password entropy is solely determine by the length of your password.", 
         "Password entropy is measured of when you should change your password.", "Password entropy is a measure of how easy a password is to remember."],
         correctAnswer: "Password entropy is a measure of how predictable your password is."
     },
     {
-        question: "What are the 3 kinds of password managers",
+        question: "What are the 3 kinds of password managers?",
         answers: ["Online, offline, free", "Browser-based, cloud-based, desktop-based", "free, premium, ultimate", "key-based, token-based, trust-based"],
         correctAnswer: "Browser-based, cloud-based, desktop-based"
     },
